@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 import "bulma/css/bulma.css";
 import "typeface-montserrat";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   useEffect(() => {

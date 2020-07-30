@@ -1,0 +1,37 @@
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+
+.navbar__toggle-container {
+  padding: 15px;
+  display: none;
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    display: block;
+  }
+}
+
+.navbar__toggle {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: #353535;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.pro-sidebar {
+  &.sm {
+    &.toggled {
+      top: 0;
+    }
+  }
+}
