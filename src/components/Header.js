@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from "react";
+import React from "react";
 
 import "styles/Header.scss";
 
@@ -9,9 +9,9 @@ function Header() {
         <h1 className="title title--header is-4">Employees</h1>
 
         <div className="header__employee-section">
-          <div class="tabs tabs--header">
+          <div className="tabs tabs--header">
             <ul>
-              <li class="is-active">
+              <li className="is-active">
                 <a href="#">Employees</a>
               </li>
               <li>
@@ -20,7 +20,7 @@ function Header() {
             </ul>
           </div>
 
-          <button class="button button--header">Add new employee</button>
+          <button className="button button--header">Add new employee</button>
         </div>
       </div>
     </header>
