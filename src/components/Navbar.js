@@ -28,6 +28,7 @@ function App(ref) {
         </span>
       </div>
 
+      {/* TODO: Growflow logo? */}
       <ProSidebar
         breakPoint={"sm"}
         toggled={isToggled}
@@ -35,11 +36,7 @@ function App(ref) {
       >
         <Menu iconShape="square">
           {/* TODO: Icons? */}
-          <MenuItem>Dashboard</MenuItem>
-          <SubMenu title="Components">
-            <MenuItem>Component 1</MenuItem>
-            <MenuItem>Component 2</MenuItem>
-          </SubMenu>
+          <MenuItem>Employees</MenuItem>
         </Menu>
       </ProSidebar>
     </Fragment>

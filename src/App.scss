@@ -1,12 +1,36 @@
 html,
 body {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 16px;
   line-height: 1.5;
   height: 100%;
-  background: #ecf0f3;
+  background-color: #ecf0f3;
+}
+
+#root,
+main {
+  height: 100vh;
 }
 
 #root {
-  height: 100vh;
+  display: flex;
+}
+
+main {
+  width: 100%;
+}
+
+.box--phoenix {
+  border-radius: 0;
+}
+
+.container {
+  // TODO: Variables?
+  @media screen and (min-width: 1408px) {
+    max-width: 1220px;
+  }
+}
+
+.container--phoenix {
+  padding: 25px 0;
+  height: 100%;
 }
