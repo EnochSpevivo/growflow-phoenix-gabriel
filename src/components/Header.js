@@ -2,7 +2,7 @@ import React from "react";
 
 import "styles/Header.scss";
 
-function Header() {
+function Header(props) {
   return (
     <header className="header">
       <div className="container container--header">
@@ -20,7 +20,12 @@ function Header() {
             </ul>
           </div>
 
-          <button className="button button--header">Add new employee</button>
+          <button
+            className="button button--header"
+            onClick={() => props.setIsModalOpen(true)}
+          >
+            Add new employee
+          </button>
         </div>
       </div>
     </header>

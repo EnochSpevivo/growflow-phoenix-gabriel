@@ -9,9 +9,18 @@ import "App.scss";
 import Navbar from "components/Navbar";
 import Table from "components/Table";
 import Header from "components/Header";
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 function App() {
   const [employees, setEmployees] = useState(ls("employees"));
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const paginateRecords = (records, page, limit) => {};
+
+  const renderPagination = (records) => {};
 
   useEffect(() => {
     // TODO: Ensure there are no ugly race conditions here
@@ -39,14 +48,21 @@ function App() {
     <Fragment>
       <Navbar></Navbar>
       <main>
-        <Header></Header>
+        <Header setIsModalOpen={setIsModalOpen}></Header>
 
         <div className="container container--phoenix">
           <div className="box box--phoenix">
-            <Table employees={employees}></Table>
+            <Table employees={currentPage}></Table>
           </div>
         </div>
       </main>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={() => {
+          setIsModalOpen(false);
+        }}
+      ></Modal>
     </Fragment>
   );
 }
