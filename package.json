@@ -14,7 +14,7 @@
     "react-fontawesome": "^1.7.1",
     "react-modal": "^3.11.2",
     "react-pro-sidebar": "^0.4.3",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "typeface-montserrat": "0.0.75"
   },
   "scripts": {
